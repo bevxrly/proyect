@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto de Matematica y Computacion</title>
+	<style type="text/css">
+		body{
+			background-image:url(https://i.pinimg.com/564x/29/14/5c/29145c08071c33c306babf0f9591f14f.jpg);
+	}
+	h1{
+		font-family:Dominique;
+		font-weight: 900;
+	}
+</style>
+</head>
+<body>
+<center><h1>Proyecto de Matemáticas y Computación</h1></center>
+<br>
+<center><a href="Sistema de Ecuaciones.html"><input type="button" value="SISTEMA DE ECUACIONES"></a></center>
+<br>
+<center><a href="Valor relativo y valor absoluto.html"><input type="button" value="VALOR RELATIVO Y ABSOLUTO"></a></center>
+<br>
+<center><a href="Sistemas posicionales y no posicionales..html"><input type="button" value="SISTEMAS"></a></center>
+<br>
+<script type="text/javascript">
+	function menu(){
+	var opcion= prompt("Ingrese la opcion que desea realizar: \n"+"1. Suma\n"+"2. Resta\n"+"3. Multiplicacion\n"+"4. Division",'');
+	switch(opcion){
+		case "1": var num1=prompt("Ingrese el primer numero: ");
+		          var num2=prompt("Ingrese el segundo numero: ");
+		          var Suma=parseInt(num1)+parseInt(num2);
+		          document.getElementById("mostrar").innerHTML="El resultado de la suma es de: "+Suma;
+		    break;
+		case "2": var num1=prompt("Ingrese el primer numero: ");
+		          var num2=prompt("Ingrese el segundo mero: ");
+		          var Resta=parseInt(num1)-parseInt(num2);nu
+		          document.getElementById("mostrar").innerHTML="El resultado de la resta es de "+Resta;
+		    break;
+		case "3": var num1=prompt("Ingrese el primer numero: ");
+		          var num2=prompt("Ingrese el segundo numero: ");
+		          var Multiplicacion=parseInt(num1)*parseInt(num2);
+		          document.getElementById("mostrar").innerHTML="El resultado de la multiplicacion es de "+Multiplicacion;
+		    break;
+		case "4": var num1=prompt("Ingrese el primer numero: ");
+		          var num2=prompt("Ingrese el segundo numero: ");
+		          var Division=parseInt(num1)/parseInt(num2);
+		          document.getElementById("mostrar").innerHTML="El resultado de la Division es de "+Division;
+		    break;
+	        }
+	}
+</script>
+<center><button onclick="menu()">Menu de operaciones</button></center>
+<center><div id="mostrar"></div></center>
+</body>
+</html>
